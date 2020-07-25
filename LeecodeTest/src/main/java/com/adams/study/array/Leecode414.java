@@ -1,5 +1,7 @@
 package com.adams.study.array;
 
+import java.util.ArrayList;
+import java.util.Set;
 import java.util.TreeSet;
 
 /**
@@ -45,7 +47,6 @@ public class Leecode414 {
             set.add(elem);
             if (set.size() > 3) set.remove(set.first());
         }
-
         // set.last() 里面最大的元素
         return set.size() < 3 ? set.last() : set.first();
     }
